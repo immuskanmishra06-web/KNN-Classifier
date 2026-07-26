@@ -58,7 +58,7 @@ if st.button("Predict Performance"):
     ])
     
     # Scale the numerical features using the loaded scaler
-    scaled_input = scaler.transform(input_data)
+    scaled_input = scaler.transform(input_data.values)
     
     # Make the prediction
     prediction = knn_model.predict(scaled_input)
